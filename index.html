@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajuste para dispositivos móviles -->
+    <title>Mensaje de Programación</title> 
+
+    <style>
+        /* Estilos para el cuerpo de la página */
+        body {
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0;
+            font-family: 'Arial', sans-serif; /* Fuente */
+            background: linear-gradient(180deg, #0057ff, #00bfff); /* Degradado azul */
+            color: #fff; /* Color del texto */
+            text-align: center; /* Centrar el texto */
+        }
+
+        /* Estilos para el párrafo */
+        p {
+            font-size: 2em; /* Tamaño de fuente grande */
+            margin: 0; /* Eliminar márgenes */
+        }
+    </style>
+    
+    <script>
+        // Función que se ejecuta cuando la página termina de cargar
+        window.onload = function() {
+            // Selecciona el elemento con id 'soyelid' y cambia su contenido de texto
+            document.getElementById("soyelid").textContent = "¡No me gusta la programación!";
+        }
+    </script>
+</head>
+<body>
+    <!-- Etiqueta de tipo texto (párrafo) que se actualizará con el mensaje al cargar la página -->
+    <p id="soyelid"></p>
+</body>
+</html>
